@@ -2,11 +2,16 @@ import React from "react";
 import User from "./components/user";
 
 
+const user={
+  name: "İrem Berber", 
+  city: "Trabzon",
+  age:"21"
+};
+
+
 function App() {
-  return  <div ><User name="irem" city="Tekirdağ" age="21"/>
-  <User name="Furkan" city="New York" age="25"/>
-  <User name="Ayşegül" city="Köln" age="51"/>
-  <User name="mustafa" city="Trabzon" age="54"/>
+  return  <div ><User data={user} family={["Ayşegül", "Furkan", "Mustafa"]}/>
+
   
   </div>;
 }
