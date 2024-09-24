@@ -1,16 +1,14 @@
 import React from "react";
-import Login from "./components/Login";
+import User from "./components/user";
 
-const isLoggedIn = false;
-const fullName = "İrem Berber";
 
 function App() {
-  return (
-    <div className="test">
-      {isLoggedIn ? "Hoşgeldiniz, " + fullName : <Login/>}
-      
-    </div>
-  );
+  return  <div ><User name="irem" city="Tekirdağ" age="21"/>
+  <User name="Furkan" city="New York" age="25"/>
+  <User name="Ayşegül" city="Köln" age="51"/>
+  <User name="mustafa" city="Trabzon" age="54"/>
+  
+  </div>;
 }
 
 export default App;
