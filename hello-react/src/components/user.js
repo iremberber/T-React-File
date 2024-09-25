@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /*function user(props) {
     console.log(props);
@@ -38,23 +39,33 @@ import React from 'react'
 
 
 function user({data, family}) {
-    console.log(data);
+    
   return  <div>
       user
       <div>isim= {data.name}</div>
       <div>şehir= {data.city}</div>
       <div>yaş= {data.age}</div>
 
-      <hr/>
-
-      <h3>Family members</h3>
-     { family.map((fam, i) => (
+       <hr/>
+     <h3>Family members</h3>
+     {family.map((fam, i) => (
         <div key={i}>{fam}</div>)
-        
-
-      )}
+      )} 
     </div>
   
 }
+
+user.propTypes= {
+/*  name: PropTypes.string,
+  city: PropTypes.string.isRequired,
+  age: PropTypes.number, */
+
+  data: PropTypes.exact({
+    name: PropTypes.string,
+    age: PropTypes.number,
+    city: PropTypes.string,
+  }),
+  family: PropTypes.string
+};
 
 export default user;
