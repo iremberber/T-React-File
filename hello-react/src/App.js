@@ -6,6 +6,7 @@ function App() {
   return(  
     <div >
       <User
+      //title="kişi"
       /* name="irem"
        city="61"
        age="21"  */

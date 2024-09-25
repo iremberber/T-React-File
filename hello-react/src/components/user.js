@@ -38,10 +38,10 @@ import PropTypes from 'prop-types';
 }*/
 
 
-function user({data, family}) {
+function user({title, data, family}) {
     
   return  <div>
-      user
+      <strong>{title}</strong>
       <div>isim= {data.name}</div>
       <div>şehir= {data.city}</div>
       <div>yaş= {data.age}</div>
@@ -61,11 +61,16 @@ user.propTypes= {
   age: PropTypes.number, */
 
   data: PropTypes.exact({
+    title: PropTypes.string.isRequired,
     name: PropTypes.string,
     age: PropTypes.number,
     city: PropTypes.string,
   }),
   family: PropTypes.string
 };
+
+user.defaultProps = {
+  title: 'Kişi',
+}
 
 export default user;
