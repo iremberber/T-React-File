@@ -20,11 +20,11 @@ function User() {
       <h2>user</h2>
       {user.name} {user.surname}
       
-      <button onClick={() => setUser({ ...user, name: getRandomName() })}>
+      <button onClick={() => setUser((prev) =>({...prev , name: getRandomName() }))}>
         İsim Değiştirici
       </button>
 
-      <button onClick={() => setUser({ ...user, surname: getRandomSurname() })}>
+      <button onClick={() => setUser((prev)=> ({ ...prev, surname: getRandomSurname() }))}>
         Soyisim Değiştirici
       </button>
     </div>

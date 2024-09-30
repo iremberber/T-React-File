@@ -10,7 +10,7 @@ function Colors() {
   };
 
   const handleClick = () => {
-    setColors([...colors, getDifColor()]); 
+    setColors((prev) => [...prev, getDifColor()]); 
   };
 
   return (

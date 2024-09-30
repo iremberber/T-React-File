@@ -1,12 +1,12 @@
 import React from "react";
 
-import Color from "./components/color";
+import Colors from "./components/color";
 
 
 function App() {
   return(  
     <div >
-      <Color/>
+      <Colors/>
  
   </div>
 );

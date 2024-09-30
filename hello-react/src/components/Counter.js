@@ -9,7 +9,7 @@ function Counter() {
       <h1>{count}</h1>
 
      
-      <button onClick={() => setCount(count + amount)}>Arttır</button>
+      <button onClick={() => setCount(prev => prev + amount)}>Arttır</button>
       
       <h1>Arttırma + {amount}</h1>
       <button onClick={() => setAmount(2)}>+2</button>
