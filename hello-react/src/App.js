@@ -1,12 +1,12 @@
 import React from "react";
 
-import Colors from "./components/color";
+import Form from "./components/Form";
 
 
 function App() {
   return(  
     <div >
-      <Colors/>
+      <Form/>
  
   </div>
 );
